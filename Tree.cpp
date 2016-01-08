@@ -6,7 +6,8 @@
  */
 
 #include "Tree.h"
-
+#include <iostream>
+using namespace std;
 
 Tree::~Tree() {
 	// TODO Auto-generated destructor stub
@@ -23,7 +24,7 @@ void Tree::traverse(Node *node)
 	while(i != NULL)
 	{
 		traverse(i);
-		i = i -> _next();
+		i = i -> _next;
 	}
 }
 
